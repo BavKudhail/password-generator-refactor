@@ -32,7 +32,7 @@ function generatePassword() {
   }
 
   // Determine the characters of the password
-  var passwordCharacters = [ ];
+  var passwordCharacters = [];
 
   if (confirm("Do you want to include Lowercase?")) {
     passwordCharacters = passwordCharacters.concat(charactersLowercase);
@@ -46,7 +46,11 @@ function generatePassword() {
   if (confirm("Do you want to include Symbols?")) {
     passwordCharacters = passwordCharacters.concat(specialCharacters);
   }
-  
+  if (passwordCharacters.length === 0) {
+    alert("Please select at least one option")
+    return generatePassword()
+  }
+
   // Generating the password
   var createPassword = [ ];
   for (var i = 0; i < passwordLength; i++) {
