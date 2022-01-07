@@ -29,25 +29,31 @@ generateBtn.addEventListener("click", writePassword);
 
 function generatePassword() {
   // 1. Determine the length of the password
-  var userPasswordLength = 0;
+  var passwordLength = 0;
 
-  userPasswordLength = prompt("Please type a number between 8 - 128");
+  passwordLength = prompt("Please type a number between 8 - 128");
 
-  if (userPasswordLength < 8 || userPasswordLength > 128) {
+  if (passwordLength < 8 || passwordLength > 128) {
     alert("Password must be between 8-128 characters long")
     return generatePassword()
   } 
-  else if (isNaN(userPasswordLength)) {
+  else if (isNaN(passwordLength)) {
     alert("Please enter a number")
     return generatePassword()
   }
-  return userPasswordLength
 
 
-
-
-
-
+  var passwordCharacters = charactersLowercase;
+  if (confirm("Do you want to include Uppercase?")) {
+    passwordCharacters = passwordCharacters.concat(charactersUppercase)
+  } 
+  if (confirm("Do you want to include Numbers?")) {
+    passwordCharacters = passwordCharacters.concat(charactersNumeric)
+  }
+  if (confirm("Do you want to include Symbols?")) {
+    passwordCharacters = passwordCharacters.concat(specialCharacters)
+  }
+  return passwordCharacters
 }
 
 
