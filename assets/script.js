@@ -24,11 +24,11 @@ function generatePassword() {
 
   if (passwordLength < 8 || passwordLength > 128) {
     alert("Password must be between 8-128 characters long")
-    return generatePassword()
+    return tryAgain()
   } 
   else if (isNaN(passwordLength)) {
     alert("Please enter a number")
-    return generatePassword()
+    return tryAgain()
   }
 
   // Determine the characters of the password
@@ -59,6 +59,16 @@ function generatePassword() {
   }
 
   return createPassword;
-
 }
 
+// Function allows user to decide whether to try again or cancel?
+function tryAgain() {
+
+  var loopAgain = confirm("Do you want to try again");
+  if (loopAgain) {
+    generatePassword()
+  } else {
+    location.reload()
+  }
+  
+}
