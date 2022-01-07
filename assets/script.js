@@ -66,9 +66,9 @@ function tryAgain() {
 
   var loopAgain = confirm("Do you want to try again");
   if (loopAgain) {
-    generatePassword()
+  return generatePassword()
   } else {
-    location.reload()
+  return location.reload()
   }
   
 }
