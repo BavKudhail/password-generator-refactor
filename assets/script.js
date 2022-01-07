@@ -18,7 +18,6 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-
 function generatePassword() {
   // Determine length of password
   var passwordLength = prompt("Please type a number between 8 - 128");
@@ -33,8 +32,11 @@ function generatePassword() {
   }
 
   // Determine the characters of the password
-  var passwordCharacters = charactersLowercase;
+  var passwordCharacters = [ ];
 
+  if (confirm("Do you want to include Lowercase?")) {
+    passwordCharacters = passwordCharacters.concat(charactersLowercase);
+  }
   if (confirm("Do you want to include Uppercase?")) {
     passwordCharacters = passwordCharacters.concat(charactersUppercase);
   } 
@@ -56,12 +58,3 @@ function generatePassword() {
 
 }
 
-
-
-
-// 5. Generating the password 
-// Userpassword = an empty array
-// use a for loop 
-// Return a user password
-
-// 6. Write password the the screen.
