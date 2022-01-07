@@ -1,3 +1,13 @@
+// 1. Create a set of arrays with user options. 
+// 1.a Lowercase - Uppercase - Numbers - Special Characters 
+// These arrays will be added to our password using .concat
+
+// Password characters
+var charactersUppercase = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
+var charactersLowercase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+var charactersNumeric = ["1", "2", "3", "4", "5", "6", "7", "8", "9"]
+var specialCharacters = ["!", "£", "$", "%", "^", "&", "*", "#", "~"]
+
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
@@ -14,20 +24,36 @@ function writePassword() {
 generateBtn.addEventListener("click", writePassword);
 
 
-
-// 1. Create a set of arrays with user options. 
-// 1.a Lowercase - Uppercase - Numbers - Special Characters 
-// These arrays will be added to our password using .concat
-
 // 2. In generate password function
 // Create a userPassword variable and set it equal to an empty array = [ " " ]
 
-// 3. Determine the length of the password 
-//  Create a variable for the value of the number
-// 3.a - Prompt the user for the password length
-// 3.b - if password length is under 8 notify the user to re-enter
-// 3.c - if the password is over 128 - notify the user to re-enter
-// 3.d - else, store the input in password length
+function generatePassword() {
+  // 1. Determine the length of the password
+  var userPasswordLength = 0;
+
+  userPasswordLength = prompt("Please type a number between 8 - 128");
+
+  if (userPasswordLength < 8 || userPasswordLength > 128) {
+    alert("Password must be between 8-128 characters long")
+    return generatePassword()
+  } 
+  else if (isNaN(userPasswordLength)) {
+    alert("Please enter a number")
+    return generatePassword()
+  }
+  return userPasswordLength
+
+
+
+
+
+
+}
+
+
+
+
+
 
 // 4. Determine the characters of the password
 // 4.a if confirm(include uppercase?) { userPassword = concat .Lowercase }
