@@ -13,9 +13,9 @@ SO THAT I can create a strong password that provides greater security
 
 ### Desktop Screenshot
 
-![https://raw.githubusercontent.com/BavKudhail/password-generator-refactor/main/assets/images/screenshot_1.JPG]
-![https://raw.githubusercontent.com/BavKudhail/password-generator-refactor/main/assets/images/screenshot_2.JPG]
-![https://raw.githubusercontent.com/BavKudhail/password-generator-refactor/main/assets/images/screenshot_3.JPG]
+![password-gen-screenshot-1](https://raw.githubusercontent.com/BavKudhail/password-generator-refactor/main/assets/images/screenshot_1.JPG)
+![password-gen-screenshot-2](https://raw.githubusercontent.com/BavKudhail/password-generator-refactor/main/assets/images/screenshot_2.JPG)
+![password-gen-screenshot-3](https://raw.githubusercontent.com/BavKudhail/password-generator-refactor/main/assets/images/screenshot_3.JPG)
 
 
 ## Acceptance Criteria
