@@ -2,7 +2,6 @@
 
 Modify starter code to create an app that allows employees to generate random passwords based on criteria that they’ve selected. 
 
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
 
 ## User Story
 
@@ -14,6 +13,9 @@ SO THAT I can create a strong password that provides greater security
 
 ### Desktop Screenshot
 
+![https://raw.githubusercontent.com/BavKudhail/password-generator-refactor/main/assets/images/screenshot_1.JPG]
+![https://raw.githubusercontent.com/BavKudhail/password-generator-refactor/main/assets/images/screenshot_2.JPG]
+![https://raw.githubusercontent.com/BavKudhail/password-generator-refactor/main/assets/images/screenshot_3.JPG]
 
 
 ## Acceptance Criteria
@@ -41,9 +43,6 @@ WHEN the password is generated
 THEN the password is either displayed in an alert or written to the page
 ```
 
-## The Learning Loop
-
-### Research Topics
 
 ## Installation
 
